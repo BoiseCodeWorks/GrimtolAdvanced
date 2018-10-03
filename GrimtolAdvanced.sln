@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrimtolAdvanced", "GrimtolAdvanced\GrimtolAdvanced.csproj", "{7BA11F45-280A-4C6C-A50A-4E838915B32C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grimtol.API", "Grimtol.API\Grimtol.API.csproj", "{1558F384-C7A4-4B2F-A02A-795CA0166964}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7BA11F45-280A-4C6C-A50A-4E838915B32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA11F45-280A-4C6C-A50A-4E838915B32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BA11F45-280A-4C6C-A50A-4E838915B32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1558F384-C7A4-4B2F-A02A-795CA0166964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1558F384-C7A4-4B2F-A02A-795CA0166964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1558F384-C7A4-4B2F-A02A-795CA0166964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1558F384-C7A4-4B2F-A02A-795CA0166964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
