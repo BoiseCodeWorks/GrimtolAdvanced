@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Grimtol.API\Grimtol.API.csproj" />
+    <Reference Include="Grimtol.API">
+      <HintPath>..\Grimtol.API\bin\Debug\netcoreapp2.1\Grimtol.API.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

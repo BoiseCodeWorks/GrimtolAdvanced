@@ -31,8 +31,6 @@ namespace Grimtol.API
             IGameState updatedState = Game.ProcessCommand(command, options, storedState);
             localGames[storedState.PlayerName] = updatedState;
             return updatedState;
-
-
         }
 
         private bool ValidateGameState(IGameState gameState)
@@ -46,6 +44,13 @@ namespace Grimtol.API
 
         public IGameState TryLoadGame(string playerName)
         {
+            var savedState = new GameState().Load(playerName);
+            if(savedState != null)
+            {
+                localGames.Add(playerName, savedState);
+                return Game.LoadGameState(localGames[playerName]);
+            }
+
             if (localGames.ContainsKey(playerName))
             {
                 return Game.LoadGameState(localGames[playerName]);

@@ -10,7 +10,8 @@ namespace Grimtol.API.Models
         go,
         take,
         use,
-        quit
+        quit,
+        save
     }
 
     internal class Game
@@ -78,11 +79,20 @@ namespace Grimtol.API.Models
                 case Commands.use:
                     Use(options);
                     break;
+                case Commands.save:
+                    SaveGameState();
+                    break;
                 case Commands.quit:
                     Active = false;
                     break;
             }
             return ToGameState();
+        }
+
+        private void SaveGameState()
+        {
+            new GameState(this).Save();
+            Messages.Add("Your Progress has been recorded");
         }
 
         void Go(string direction)

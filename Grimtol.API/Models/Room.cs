@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Grimtol.API.Models
 {
+    [Serializable]
     internal class Room : IRoom
     {
         public string Name { get; private set; }
