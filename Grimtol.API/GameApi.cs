@@ -27,7 +27,7 @@ namespace Grimtol.API
                 options = userInput.Substring(userInput.IndexOf(' ')).Trim();
             };
 
-
+            
             IGameState updatedState = Game.ProcessCommand(command, options, storedState);
             localGames[storedState.PlayerName] = updatedState;
             return updatedState;
